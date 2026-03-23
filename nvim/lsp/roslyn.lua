@@ -9,6 +9,8 @@ return {
     "--logLevel",
     "Trace",
     "--extensionLogDirectory=" .. vim.fs.dirname(vim.lsp.log.get_filename()),
+    "--extension", "/home/sk/.dotfiles/nvim/lsp/extentions/Microsoft.CodeAnalysis.Features.dll",
+    "--extension", "/home/sk/.dotfiles/nvim/lsp/extentions/Microsoft.CodeAnalysis.CSharp.Features.dll",
     "--autoLoadProjects",
     "--stdio",
   },

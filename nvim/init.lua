@@ -7,7 +7,7 @@ require("keymaps")
 require("lazy-bootstrap")
 require("lazy-plugins")
 
-vim.lsp.enable({ "lua_ls", "ty", "rust_analyzer", "roslyn", "clangd", "ts_ls", "gopls" })
+vim.lsp.enable({ "lua_ls", "ty", "rust_analyzer", "roslyn", "clangd", "ts_ls", "gopls", "zls" })
 
 vim.cmd("colorscheme tokyonight-night")
 

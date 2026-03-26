@@ -6,4 +6,4 @@ family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
 [general]
-import = ["~/.config/alacritty/themes/xterm.toml"]
+import = ["~/.config/alacritty/xterm.toml"]

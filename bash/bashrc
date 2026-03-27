@@ -1,0 +1,42 @@
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+fi
+
+[[ $- != *i* ]] && return
+
+source /usr/share/git/completion/git-prompt.sh
+PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'; PS1='[\u@\h \W\[\e[2m\]${PS1_CMD1}\[\e[0m\]]\$ '
+
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_CACHE_HOME="$HOME/.cache"
+
+alias vim='nvim'
+
+export BUN_INSTALL="$XDG_DATA_HOME/bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+export NODE_REPL_HISTORY="$XDG_DATA_HOME/node_repl_history"
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
+export PATH="$XDG_DATA_HOME/node/bin:$PATH"
+
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export DOTNET_ROOT="$HOME/.dotnet"
+export PATH="$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools"
+
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
+. "/home/sk/.local/share/cargo/env"
+
+export GOPATH="$XDG_DATA_HOME/go"
+export GOMODCACHE="$XDG_CACHE_HOME/go/mod"
+export PATH=$PATH:$(go env GOPATH)/bin
+
+export GNUPGHOME="$XDG_DATA_HOME/gnupg"
+export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+
+eval "$(fzf --bash)"
+
+eval "$(zoxide init bash)"
+

@@ -4,7 +4,7 @@ vim.o.showmode = false
 vim.o.cursorline = true
 vim.o.scrolloff = 10
 vim.o.signcolumn = "yes"
-
+vim.o.clipboard = "unnamedplus"
 vim.o.breakindent = true
 vim.o.undofile = true
 vim.o.ignorecase = true

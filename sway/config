@@ -1,4 +1,4 @@
-font pango:JetBrainsMono Nerd Font 9
+font pango:JetBrainsMono Nerd Font 8
 
 set $mod Mod4
 
@@ -97,6 +97,9 @@ bindsym $mod+Shift+0 move container to workspace number 10
 assign [class="alacritty"] 1
 exec --no-startup-id alacritty
 
+assign [class="librewolf"] 2
+exec --no-startup-id librewolf
+
 # You can "split" the current object of your focus with
 # $mod+b or $mod+v, for horizontal and vertical splits
 # respectively.
@@ -161,12 +164,7 @@ bindsym Print exec grim
 bar {
     position bottom
 
-    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
-
-    colors {
-        statusline #ffffff
-        background #323232
-    }
+    status_command i3status
 }
 
 include /etc/sway/config.d/*

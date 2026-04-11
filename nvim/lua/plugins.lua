@@ -5,8 +5,6 @@ vim.pack.add({
   { src = "https://github.com/saghen/blink.cmp", version = "v1" },
 })
 
--- version = 'main',
-
 require("plugins.nvim-treesitter")
 require("plugins.mini")
 require("plugins.blink")

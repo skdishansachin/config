@@ -4,8 +4,7 @@ vim.g.have_nerd_font = true
 
 require("options")
 require("keymaps")
-require("lazy-bootstrap")
-require("lazy-plugins")
+require("plugins")
 
 vim.lsp.enable({ "lua_ls", "ty", "rust_analyzer", "roslyn", "clangd", "ts_ls", "gopls", "zls" })
 

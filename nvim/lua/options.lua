@@ -19,5 +19,3 @@ vim.o.inccommand = "split"
 
 vim.o.list = true
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
-
-vim.opt.completeopt = { "menu", "menuone", "noselect" }

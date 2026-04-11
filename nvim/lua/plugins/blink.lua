@@ -14,4 +14,3 @@ require("blink.cmp").setup({
     implementation = "lua",
   },
 })
-

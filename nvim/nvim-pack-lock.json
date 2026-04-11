@@ -7,7 +7,8 @@
     },
     "mini.nvim": {
       "rev": "69b7433355664cf76898eb86a12a019f39bd86d1",
-      "src": "https://github.com/nvim-mini/mini.nvim"
+      "src": "https://github.com/nvim-mini/mini.nvim",
+      "version": "'stable'"
     },
     "nvim-treesitter": {
       "rev": "4916d6592ede8c07973490d9322f187e07dfefac",

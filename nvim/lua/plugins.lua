@@ -1,7 +1,7 @@
 vim.pack.add({
   "https://github.com/folke/tokyonight.nvim",
   { src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },
-  "https://github.com/nvim-mini/mini.nvim",
+  { src = "https://github.com/nvim-mini/mini.nvim", version = "stable" },
   { src = "https://github.com/saghen/blink.cmp", version = "v1" },
 })
 

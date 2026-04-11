@@ -3,29 +3,29 @@ vim.pack.add({
   { src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },
   "https://github.com/nvim-mini/mini.nvim",
   "https://github.com/saghen/blink.cmp",
-});
+})
 
 require("nvim-treesitter").setup({
   ensure_installed = {
-        "bash",
-        "c",
-        "diff",
-        "html",
-        "lua",
-        "luadoc",
-        "markdown",
-        "markdown_inline",
-        "query",
-        "vim",
-        "vimdoc",
-        "xml",
-      },
-      auto_install = true,
-      highlight = {
-        enable = true,
-      },
-      indent = { enable = true, disable = { "xml" } },
-});
+    "bash",
+    "c",
+    "diff",
+    "html",
+    "lua",
+    "luadoc",
+    "markdown",
+    "markdown_inline",
+    "query",
+    "vim",
+    "vimdoc",
+    "xml",
+  },
+  auto_install = true,
+  highlight = {
+    enable = true,
+  },
+  indent = { enable = true, disable = { "xml" } },
+})
 
 require("mini.comment").setup()
 require("mini.pairs").setup()
@@ -69,12 +69,24 @@ end, { desc = "[S]earch [D]iagnostics" })
 
 vim.keymap.set("n", "<leader><leader>", pick.builtin.buffers, { desc = "[ ] Find existing buffers" })
 
-vim.keymap.set("n", "grr", function() pickextra.pickers.lsp({ scope = "references" }) end, { desc = "[G]oto [R]eferences" })
-vim.keymap.set("n", "gri", function() pickextra.pickers.lsp({ scope = "implementation" }) end, { desc = "[G]oto [I]mplementation" })
-vim.keymap.set("n", "grd", function() pickextra.pickers.lsp({ scope = "definition" }) end, { desc = "[G]oto [D]efinition" })
-vim.keymap.set("n", "gO", function() pickextra.pickers.lsp({ scope = "document_symbol" }) end, { desc = "Open Document Symbols" })
-vim.keymap.set("n", "gW", function() pickextra.pickers.lsp({ scope = "workspace_symbol" }) end, { desc = "Open Workspace Symbols" })
-vim.keymap.set("n", "grt", function() pickextra.pickers.lsp({ scope = "type_definition" }) end, { desc = "[G]oto [T]ype Definition" })
+vim.keymap.set("n", "grr", function()
+  pickextra.pickers.lsp({ scope = "references" })
+end, { desc = "[G]oto [R]eferences" })
+vim.keymap.set("n", "gri", function()
+  pickextra.pickers.lsp({ scope = "implementation" })
+end, { desc = "[G]oto [I]mplementation" })
+vim.keymap.set("n", "grd", function()
+  pickextra.pickers.lsp({ scope = "definition" })
+end, { desc = "[G]oto [D]efinition" })
+vim.keymap.set("n", "gO", function()
+  pickextra.pickers.lsp({ scope = "document_symbol" })
+end, { desc = "Open Document Symbols" })
+vim.keymap.set("n", "gW", function()
+  pickextra.pickers.lsp({ scope = "workspace_symbol" })
+end, { desc = "Open Workspace Symbols" })
+vim.keymap.set("n", "grt", function()
+  pickextra.pickers.lsp({ scope = "type_definition" })
+end, { desc = "[G]oto [T]ype Definition" })
 
 require("blink.cmp").setup({
   keymap = { preset = "default" },

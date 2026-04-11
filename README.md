@@ -1,17 +1,7 @@
-# config
+# Repository Moved
 
-Personal configuration for Arch Linux, following XDG conventions and managed with symlinks.
+This project has been moved to [Codeberg](https://codeberg.org/).
 
-### Usage Example
+https://codeberg.org/skdishansachin/config
 
-To symlink these configurations, you can use the `ln -s` command:
-
-```sh
-ln -s ~/config/alacritty ~/.config
-ln -s ~/config/i3 ~/.config
-ln -s ~/config/i3status ~/.config
-ln -s ~/config/nvim ~/.config
-ln -s ~/config/tmux ~/.config
-```
-
-> **Note:** Ensure the target directories in `~/.config` do not already exist before creating the symlinks.
+This repository is archived and no longer maintained.

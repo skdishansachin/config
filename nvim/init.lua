@@ -2,9 +2,9 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.g.have_nerd_font = true
 
+require("plugins")
 require("options")
 require("keymaps")
-require("plugins")
 
 vim.lsp.enable({ "lua_ls", "ty", "rust_analyzer", "roslyn", "clangd", "ts_ls", "gopls", "zls" })
 

@@ -9,5 +9,5 @@ style = "Regular"
 import = ["xterm.toml"]
 
 [window]
-opacity = 0.92
+opacity = 0.90
 padding = { x = 10, y = 10 }
